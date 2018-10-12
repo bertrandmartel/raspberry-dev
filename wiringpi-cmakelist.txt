@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
+find_package(Threads REQUIRED)
+FILE(GLOB SRC_FILES *.c)
+add_library (wiringPi SHARED ${SRC_FILES})
+target_include_directories (wiringPi PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(wiringPi ${CMAKE_THREAD_LIBS_INIT} crypt m rt)
+add_definitions(-D_GNU_SOURCE)
