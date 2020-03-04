@@ -3,4 +3,4 @@
 	url = git://github.com/raspberrypi/tools.git
 [submodule "wiringPi"]
 	path = wiringPi
-	url = git://git.drogon.net/wiringPi
+	url = git://github.com/WiringPi/WiringPi.git
