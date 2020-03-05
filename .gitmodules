@@ -1,6 +1,3 @@
-[submodule "tools"]
-	path = tools
-	url = git://github.com/raspberrypi/tools.git
 [submodule "wiringPi"]
 	path = wiringPi
 	url = git://github.com/WiringPi/WiringPi.git
